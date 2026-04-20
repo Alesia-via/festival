@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>With Tailwind CSS</title>
+    <link rel="icon" type="image/svg" href="style/img/music-notes.svg">
+     <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<header class="fixed w-full bg-gray-100 shadow z-50">
+  <div class="max-w-6xl mx-auto px-4">
+    
+    <div class="flex justify-between items-center py-4">
+      
+      <!--  Logo -->
+      <a href="#about" class="flex items-center gap-2 text-xl font-bold hover:text-gray-700">
+        <img src="style/img/music-notes.svg" alt="Music notes" class="w-6 h-6">
+        <span>CultureFest</span>
+      </a>
+
+      <!--  Burger -->
+      <div class="flex flex-col gap-1 cursor-pointer md:hidden">
+        <span class="w-6 h-0.5 bg-black"></span>
+        <span class="w-6 h-0.5 bg-black"></span>
+        <span class="w-6 h-0.5 bg-black"></span>
+      </div>
+
+      <!--  Nav -->
+      <nav class="hidden md:flex gap-6">
+        <a href="#about" class="hover:text-gray-700 active:text-orange-800">About</a>
+        <a href="#lineup" class="hover:text-gray-700 active:text-orange-800">Lineup</a>
+        <a href="#schedule" class="hover:text-gray-700 active:text-orange-800">Schedule</a>
+        <a href="#tickets" class="hover:text-gray-700 active:text-orange-800">Tickets</a>
+        <a href="#venue" class="hover:text-gray-700 active:text-orange-800">Venue</a>
+      </nav>
+      <button class="hidden md:inline-block bg-gray-900 text-white px-4 py-2 rounded hover:bg-gray-700">Get Tickets</button>
+    </div>
+  </div>
+</header>
+
+<!--  Overlay -->
+<div class="fixed inset-0 bg-black/50 hidden"></div>
+
+<!--Home  -->
+<section id="home"class="pt-20 min-h-screen bg-[url('style/img/festival-background.jpeg')] bg-cover bg-center bg-no-repeat">
+  <div class="max-w-6xl mx-auto px-4">
+    <h1 class="text-6xl text-center text-white font-bold mb-4">CultureFest</h1>
+    <h2 class="text-4xl text-center text-white font-semibold mb-4">World Music Festival 2025</h2>
+    <p class="text-lg text-center text-white  mb-8">Experience the world's most vibrant cultures through music, dance, and art.<br> Join us for three unforgettable days celebrating global diversity.</p> 
+    <div class="flex justify-center gap-4">
+        <div>
+            <img src="style/img/calendar.svg" alt="Calendar icon" class="w-6 h-6 inline-block mr-2">
+            <span class="text-white">July 15-17, 2025</span>
+        </div>
+            <div>
+            <img src="style/img/location.svg" alt="Location icon" class="w-6 h-6 inline-block mr-2">
+            <span class="text-white">Central Park, New York</span>
+        </div>
+         <div>
+            <img src="style/img/people-white.svg" alt="People icon" class="w-6 h-6 inline-block mr-2">
+            <span class="text-white">50+ Artists</span>     
+        </div>
+    </div>
+    <div class=" pt-20 flex justify-center gap-4 ">
+        <a href="#tickets" class="inline-block bg-gray-900 text-white font-bold px-6 py-3 rounded hover:bg-gray-700">Buy Ticket Now</a>
+        <a href="#lineup" class="inline-block bg-white text-white font-bold px-6 py-3 rounded hover:text-gray-900">View Lineup</a> 
+    </div>
+
+  </div>
+</section>
+<!--About  -->
+<section id="about" class="bg-gray-100 min-h-screen py-20 px-4">
+    <div class="flex mx-auto px-4 gap-8">
+        <div class="w-1/2 relative">
+            <h2 class=" text-3xl md:text-4xl font-bold mb-6">Celebrating Musical<br>Heritage</h2>
+            <p class="text-lg text-muted-foreground text-gray-500 mb-8">CultureFest brings together the world's most talented musicians, dancers, and artists to celebrate the rich tapestry of global culture. For three days, Central Park transforms into a vibrant showcase of humanity's musical heritage.</p>
+            <div class="grid grid-cols-2 gap-6">
+                <!-- card  -->
+                <div class="flex items-start space-x-3">
+                    <div class="px-2 bg-gray-200 rounded-lg">
+                        <img  src="style/img/planet.svg" alt="Global Diversity" class="w-12 h-12 object-contain">
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h4 class="text-lg font-bold text-gray-900">Global Diversity</h4>
+                        <p class="text-sm text-muted-foreground text-gray-500">Artists from 25+ countries representing every continent</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-3">
+                    <div class="px-2 bg-gray-200 rounded-lg">
+                        <img  src="style/img/music-notes.svg" alt="Music Notes" class="w-12 h-12 object-contain">
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h4 class="text-lg font-bold text-gray-900">Rich Traditions</h4>
+                        <p class="text-sm text-muted-foreground text-gray-500">From folk to contemporary, experience authentic cultural sounds</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-3">
+                    <div class="px-2 bg-gray-200 rounded-lg">
+                        <img  src="style/img/people-black.svg" alt="Community" class="w-12 h-12 object-contain">
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h4 class="text-lg font-bold text-gray-900">Community</h4>
+                        <p class="text-sm text-muted-foreground text-gray-500">Connect with people who share your passion for world music.</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-3">
+                    <div class="px-2 bg-gray-200 rounded-lg">
+                        <img  src="style/img/heart.svg" alt="Heart" class="w-12 h-12 object-contain">
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h4 class="text-lg font-bold text-gray-900">Cultural Exchange</h4>
+                        <p class="text-sm text-muted-foreground text-gray-500">Learn about different cultures through the universal language of music.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-1/2 relative">
+            <div class="relative rounded-2xl overflow-hidden">
+                <img src="style/img/photo-section-about.jpeg" alt="Music instruments" class="w-full h-[500px] object-cover">
+            </div>
+            <div class="absolute -bottom-6 -right-6 bg-white rounded-2xl p-6 shadow-lg border z-10">
+                <div class="grid grid-cols-2 gap-4 text-center">
+                   <div>
+                       <div class="text-2xl font-bold text-primary">50+</div>
+                       <div class="text-sm text-muted-foreground">Artists</div>
+                </div>
+
+                    <div>
+                        <div class="text-2xl font-bold text-primary">25+</div>
+                        <div class="text-sm text-muted-foreground">Countries</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Lineup -->
+<section id="lineup" class="py-20 bg-white min-h-screen">
+    <div class=" flex flex-col gap-12 max-w-[1000px] px-4 mx-auto">
+        <div class="flex flex-col items-center p-4 mx-auto max-w-[700px]">
+              <h2 class="text-4xl text-center font-bold mb-8">World-Class Lineup</h2>
+              <p class="text-center text-gray-500 mb-12">Experience performances from Grammy winners, cultural ambassadors, and rising stars from around the globe.</p>
+        </div>
+        <div class="flex flex-col gap-8 mb-10">
+            <h3 class="text-3xl text-center font-bold mb-8">Headliners</h3>
+            <div class="grid grid-cols-3 gap-8">
+                <!-- card-1 -->
+                <div class="flex flex-col gap-2 rounded-xl p-6 border shadow-lg hover:shadow-md">
+                    <div class="flex justify-between items-start">
+                        <span class="text-xs text-black bg-gray-200 px-3 py-1 rounded-2xl">Friday</span>      
+                        <span class="text-xs text-black bg-white px-3 py-1 rounded-2xl border">Benin</span>
+                    </div>
+                    <h4 class="text-2xl font-bold text-gray-900">Angelique Kidjo</h4>
+                    <p class="text-sm text-gray-500">Afrobeat</p>
+                    <div class="flex items-center gap-1">
+                        <img src="style/img/clock.svg" alt="Clock" class="w-6 h-6 object-cover rounded-lg">
+                        <span class="text-xs text-gray-00 ml-2">8:00 PM</span> 
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <img src="style/img/location-check.svg" alt="Location" class="w-6 h-6 object-cover rounded-lg">
+                        <span class="text-xs text-gray-900 ml-2">Main Stage</span> 
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2 rounded-xl p-6 border shadow-lg hover:shadow-md">
+                    <div class="flex justify-between items-start">
+                        <span class="text-xs text-black bg-gray-200 px-3 py-1 rounded-2xl">Saturday</span>      
+                        <span class="text-xs text-black bg-white px-3 py-1 rounded-2xl border">India</span>
+                    </div>
+                    <h4 class="text-2xl font-bold text-gray-900">Anoushka Shankar</h4>
+                    <p class="text-sm text-gray-500">Indian Classical Music</p>
+                    <div class="flex items-center gap-1">
+                        <img src="style/img/clock.svg" alt="Clock" class="w-6 h-6 object-cover rounded-lg">
+                        <span class="text-xs text-gray-00 ml-2">7:30 PM</span> 
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <img src="style/img/location-check.svg" alt="Location" class="w-6 h-6 object-cover rounded-lg">
+                        <span class="text-xs text-gray-900 ml-2">Main Stage</span> 
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2 rounded-xl p-6 border shadow-lg hover:shadow-md">
+                    <div class="flex justify-between items-start">
+                        <span class="text-xs text-black bg-gray-200 px-3 py-1 rounded-2xl">Sunday</span>      
+                        <span class="text-xs text-black bg-white px-3 py-1 rounded-2xl border">Colombia</span>
+                    </div>
+                    <h4 class="text-2xl font-bold text-gray-900">Bomba Estéreo</h4>
+                    <p class="text-sm text-gray-500">Cumbia Electrónica</p>
+                    <div class="flex items-center gap-1">
+                        <img src="style/img/clock.svg" alt="Clock" class="w-6 h-6 object-cover rounded-lg">
+                        <span class="text-xs text-gray-00 ml-2">6:00 PM</span> 
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <img src="style/img/location-check.svg" alt="Location" class="w-6 h-6 object-cover rounded-lg">
+                        <span class="text-xs text-gray-900 ml-2">Main Stage</span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+                <h3 class="text-3xl text-center font-bold mb-8">Featured Artists</h3>
+                <div class="grid grid-cols-4 gap-4 mx-auto">
+                    <!-- Featured Artist Card -->
+                     <div class="flex flex-col gap-2 rounded-xl p-4 border shadow-lg hover:shadow-md">
+                         <div class="flex justify-between gap -3 items-start">
+                         <h5 class="text-sm font-bold text-gray-900">Toumani Diabaté</h5>      
+                         <span class="text-xs text-black bg-white px-2 py-0 rounded-2xl border">Mali</span>
+                         </div>
+                       <p class="text-sm text-gray-500">West African Kora</p>
+                     </div>
+                     <div class="flex flex-col gap-2 rounded-xl p-4 border shadow-lg hover:shadow-md">
+                         <div class="flex justify-between gap -3 items-start">
+                         <h5 class="text-sm font-bold text-gray-900">Yasmin Levy</h5>      
+                         <span class="text-xs text-black bg-white px-2 py-0 rounded-2xl border">Spain</span>
+                         </div>
+                       <p class="text-sm text-gray-500">Ladino</p>
+                     </div>
+                     <div class="flex flex-col gap-2 rounded-xl p-4 border shadow-lg hover:shadow-md">
+                         <div class="flex justify-between gap -3 items-start">
+                         <h5 class="text-sm font-bold text-gray-900">Tash Sultana</h5>      
+                         <span class="text-xs text-black bg-white px-2 py-0 rounded-2xl border">Australia</span>
+                         </div>
+                       <p class="text-sm text-gray-500">Psychedelic Soul</p>
+                     </div>
+                     <div class="flex flex-col gap-2 rounded-xl p-4 border shadow-lg hover:shadow-md">
+                         <div class="flex justify-between gap -3 items-start">
+                         <h5 class="text-sm font-bold text-gray-900">Fatoumata Diawara</h5>      
+                         <span class="text-xs text-black bg-white px-2 py-0 rounded-2xl border">Mali</span>
+                         </div>
+                       <p class="text-sm text-gray-500">Afro-Folk</p>
+                     </div>
+                     <div class="flex flex-col gap-2 rounded-xl p-4 border shadow-lg hover:shadow-md">
+                         <div class="flex justify-between gap -3 items-start">
+                         <h5 class="text-sm font-bold text-gray-900">Nitin Sawhney</h5>      
+                         <span class="text-xs text-black bg-white px-2 py-0 rounded-2xl border">UK</span>
+                         </div>
+                       <p class="text-sm text-gray-500">Electronic World</p>
+                     </div>
+                     <div class="flex flex-col gap-2 rounded-xl p-4 border shadow-lg hover:shadow-md">
+                         <div class="flex justify-between gap -3 items-start">
+                         <h5 class="text-sm font-bold text-gray-900">Jesse Cook</h5>      
+                         <span class="text-xs text-black bg-white px-2 py-0 rounded-2xl border">Canada</span>
+                         </div>
+                       <p class="text-sm text-gray-500">Nuevo Flamenco</p>
+                     </div>
+                     <div class="flex flex-col gap-2 rounded-xl p-4 border shadow-lg hover:shadow-md">
+                         <div class="flex justify-between gap -3 items-start">
+                         <h5 class="text-sm font-bold text-gray-900">Rodrigo y Gabriela</h5>      
+                         <span class="text-xs text-black bg-white px-2 py-0 rounded-2xl border">Mexico</span>
+                         </div>
+                       <p class="text-sm text-gray-500">Acoustic Rock</p>
+                     </div>
+                     <div class="flex flex-col gap-2 rounded-xl p-4 border shadow-lg hover:shadow-md">
+                         <div class="flex justify-between gap -3 items-start">
+                         <h5 class="text-sm font-bold text-gray-900">Omar Souleyman</h5>      
+                         <span class="text-xs text-black bg-white px-2 py-0 rounded-2xl border">Syria</span>
+                         </div>
+                       <p class="text-sm text-gray-500">Syrian Electronic</p>
+                     </div>
+                     
+                </div>
+            </div>
+        <button class="hidden md:inline-block bg-gray-900 max-w-[200px] mx-auto text-white px-4 py-2 rounded hover:bg-gray-700">Get Tickets</button>
+    </div>
+</section>
+<!-- Schedule -->
+<section id="schedule" class="bg-gray-100 min-h-screen py-20 px-4">
+    <div>
+        <div class="flex flex-col">
+            <h2 class="text-4xl text-center font-bold mb-8">Festival Schedule</h2>
+            <p class="text-center text-gray-500 mb-12">Three days of non-stop cultural performances across multiple stages.</p>
+        </div>
+        <!-- table schedule -->
+        <div class="flex flex-col max-w-[900px] mx-auto mb-8">
+            <!-- Табы -->
+            <div class="grid grid-cols-3 gap-4 mb-8 bg-gray-200 px-2 py-1 rounded-xl">
+                <button data-state="inactive" data-day="friday" class="bg-transparent data-[state=active]:bg-white p-1 rounded-2xl text-center text-xs text-black ">Friday, July 15</button>
+                <button data-state="active" data-day="saturday" class="bg-transparent data-[state=active]:bg-white p-1 rounded-2xl text-center text-xs text-black ">Saturday, July 16</button>
+                <button data-state="inactive" data-day="sunday" class="bg-transparent data-[state=active]:bg-white p-1 rounded-2xl text-center text-xs text-black ">Sunday, July 17</button>
+            </div>
+            <!-- Содержимое по дням -->
+             <!-- friday -->
+            <div data-state="inactive" data-day="friday" class="data-[state=inactive]:hidden data-[state=active]:flex flex-col gap-4">
+                    <!-- card1 -->
+                <div class="flex justify-between bg-white p-1 rounded-xl gap-4 hover:shadow-md">
+                    <div class="w-2/3  flex items-center gap-4 px-2 py-4">
+                        <div class="flex justify-center items-center gap-1">
+                            <img src="style/img/clock-grey.svg" alt="clock" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                            <span class="text-xs text-gray-500">11:00 AM</span>
+                            
+                        </div>
+                        <div class="flex flex-col">
+                               <h5 class=" text-start text-xs text-gray-900 font-bold">Indian Classical Ensemble</h5>
+                              <p class="text-xs text-gray-500">Classical</p>
+                        </div>
+                    </div>
+                    <div class="w-1/3 flex px-4 items-center justify-end py-4">
+                        <div class="flex max-w-[120px] gap-1 rounded-md bg-blue-800 text-white px-0 py-0 inline-block">
+                            <img src="style/img/location-white.svg" alt="Location" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                            <span class="text-xs text-white mr-1">Cultural Stage</span>
+                        </div>           
+                    </div>
+                </div>
+                <!-- end1 -->
+                 <!-- card2  -->
+                <div class="flex justify-between bg-white p-1 rounded-xl gap-4 hover:shadow-md">
+                    <div class="w-2/3  flex items-center gap-4 px-2 py-4">
+                        <div class="flex justify-center items-center gap-1">
+                            <img src="style/img/clock-grey.svg" alt="clock" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                            <span class="text-xs text-gray-500">12:00 AM</span>
+                            
+                        </div>
+                        <div class="flex flex-col">
+                               <h5 class=" text-start text-xs text-gray-900 font-bold">Toumani Diabaté</h5>
+                              <p class="text-xs text-gray-500">West African Kora</p>
+                        </div>                 
+                    </div>
+                    <div class="w-1/3 flex px-4 items-center justify-end py-4">
+                        <div class="flex max-w-[120px] gap-1 rounded-md bg-green-600 text-white px-0 py-0 inline-block">
+                            <img src="style/img/location-white.svg" alt="Location" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                            <span class="text-xs text-white mr-1">World Stage</span>
+                        </div>           
+                    </div>
+                </div>
+                <!-- end2 -->
+                 <!-- card3  -->
+                <div class="flex justify-between bg-white p-1 rounded-xl gap-4 hover:shadow-md">
+                    <div class="w-2/3  flex items-center gap-4 px-2 py-4">
+                        <div class="flex justify-center items-center gap-1">
+                            <img src="style/img/clock-grey.svg" alt="clock" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                            <span class="text-xs text-gray-500">1:00 PM</span>
+                            
+                        </div>
+                        <div class="flex flex-col">
+                               <h5 class=" text-start text-xs text-gray-900 font-bold">Yasmin Levy</h5>
+                              <p class="text-xs text-gray-500">Ladino</p>
+                        </div>                 
+                    </div>
+                    <div class="w-1/3 flex px-4 items-center justify-end py-4">
+                        <div class="flex max-w-[120px] gap-1 rounded-md bg-blue-800 text-white px-0 py-0 inline-block">
+                            <img src="style/img/location-white.svg" alt="Location" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                            <span class="text-xs text-white mr-1">Cultural Stage</span>
+                        </div>           
+                    </div>
+                </div>
+               <!-- card4 -->
+                <div class="flex justify-between bg-white p-1 rounded-xl gap-4 hover:shadow-md">
+                    <div class="w-2/3  flex items-center gap-4 px-2 py-4">
+                        <div class="flex justify-center items-center gap-1">
+                            <img src="style/img/clock-grey.svg" alt="clock" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                            <span class="text-xs text-gray-500">3:00 PM</span>
+                            
+                        </div>
+                        <div class="flex flex-col">
+                               <h5 class=" text-start text-xs text-gray-900 font-bold">Fatoumata Diawara</h5>
+                              <p class="text-xs text-gray-500">Afro-Folk</p>
+                        </div>                 
+                    </div>
+                    <div class="w-1/3 flex px-4 items-center justify-end py-4">
+                        <div class="flex max-w-[120px] gap-1 rounded-md bg-black text-white px-0 py-0 inline-block">
+                            <img src="style/img/location-white.svg" alt="Location" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                            <span class="text-xs text-white mr-1">Main Stage</span>
+                        </div>           
+                    </div>
+                </div>
+                <!-- card5 -->
+                <div class="flex justify-between bg-white p-1 rounded-xl gap-4 hover:shadow-md">
+                    <div class="w-2/3  flex items-center gap-4 px-2 py-4">
+                        <div class="flex justify-center items-center gap-1">
+                            <img src="style/img/clock-grey.svg" alt="clock" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                            <span class="text-xs text-gray-500">6:30 PM</span>
+                            
+                        </div>
+                        <div class="flex flex-col">
+                               <h5 class=" text-start text-xs text-gray-900 font-bold">Jesse Cook</h5>
+                              <p class="text-xs text-gray-500">Nuevo Flamenco</p>
+                        </div>                 
+                    </div>
+                    <div class="w-1/3 flex px-4 items-center justify-end py-4">
+                        <div class="flex max-w-[120px] gap-1 rounded-md bg-blue-800 text-white px-0 py-0 inline-block">
+                            <img src="style/img/location-white.svg" alt="Location" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                            <span class="text-xs text-white mr-1">Cultural Stage</span>
+                        </div>           
+                    </div>
+                </div>
+                 <!-- card6 -->                  
+                 <div class="flex justify-between bg-white p-1 rounded-xl border-black gap-4 hover:shadow-md border">
+                    <div class="w-2/3  flex items-center gap-4 px-2 py-4">
+                        <div class="flex justify-center items-center gap-1">
+                            <img src="style/img/clock-grey.svg" alt="clock" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                            <span class="text-xs text-gray-500">8:00 PM</span>
+                            
+                        </div>
+                        <div class="flex flex-col">
+                               <h5 class=" text-start text-xs text-gray-900 font-bold">Angelique Kidjo</h5>
+                              <p class="text-xs text-gray-500">Afrobeat</p>
+                        </div>                 
+                    </div>
+                    <div class="w-1/3 flex px-4 items-center justify-end py-4 gap-2">
+                        <div class="flex max-w-[140px] gap-1 rounded-md bg-black text-white px-1 py-0 inline-block text-xs text-white mr-1">Headliner</div>
+                        <div class="flex max-w-[120px] gap-1 rounded-md bg-black text-white px-0 py-0 inline-block">
+                            <img src="style/img/location-white.svg" alt="Location" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                            <span class="text-xs text-white mr-1">Main Stage</span>
+                        </div>           
+                    </div>
+               
+                </div>
+            <!--  -->
+                
+            </div>
+                <!-- saturday -->
+            <div data-state="active" data-day="saturday" class="data-[state=inactive]:hidden data-[state=active]:flex flex-col gap-4">
+                <!-- card1 -->
+                <div class="flex justify-between bg-white p-1 rounded-xl gap-4 hover:shadow-md">
+                    <div class="w-2/3  flex items-center gap-4 px-2 py-4">
+                        <div class="flex justify-center items-center gap-1">
+                            <img src="style/img/clock-grey.svg" alt="clock" class="w-4 h-4 object-coveадr rounded-lg inline-block mr-1">
+                            <span class="text-xs text-gray-500">11:30 AM</span>
+                            
+                        </div>
+                        <div class="flex flex-col">
+                               <h5 class=" text-start text-xs text-gray-900 font-bold">Indian Classical Ensemble</h5>
+                              <p class="text-xs text-gray-500">Classical</p>
+                        </div>
+                    </div>
+                    <div class="w-1/3 flex px-4 items-center justify-end py-4">
+                        <div class="flex max-w-[120px] gap-1 rounded-md bg-blue-800 text-white px-0 py-0 inline-block">
+                            <img src="style/img/location-white.svg" alt="Location" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                            <span class="text-xs text-white mr-1">Cultural Stage</span>
+                        </div>           
+                    </div>
+                </div>
+                <!-- end1 -->
+                <!-- card2  -->
+                <div class="flex justify-between bg-white p-1 rounded-xl gap-4 hover:shadow-md">
+                    <div class="w-2/3  flex items-center gap-4 px-2 py-4">
+                        <div class="flex justify-center items-center gap-1">
+                            <img src="style/img/clock-grey.svg" alt="clock" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                            <span class="text-xs text-gray-500">1:00 PM</span>
+                            
+                        </div>
+                        <div class="flex flex-col">
+                               <h5 class=" text-start text-xs text-gray-900 font-bold">Tash Sultana</h5>
+                              <p class="text-xs text-gray-500">Psychedelic Soul</p>
+                        </div>                 
+                    </div>
+                    <div class="w-1/3 flex px-4 items-center justify-end py-4">
+                        <div class="flex max-w-[120px] gap-1 rounded-md bg-green-600 text-white px-0 py-0 inline-block">
+                            <img src="style/img/location-white.svg" alt="Location" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                            <span class="text-xs text-white mr-1">World Stage</span>
+                        </div>           
+                    </div>
+                </div>
+                <!-- card3  -->
+                <div class="flex justify-between bg-white p-1 rounded-xl gap-4 hover:shadow-md">
+                    <div class="w-2/3  flex items-center gap-4 px-2 py-4">
+                        <div class="flex justify-center items-center gap-1">
+                            <img src="style/img/clock-grey.svg" alt="clock" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                            <span class="text-xs text-gray-500">2:30 PM</span>
+                            
+                        </div>
+                        <div class="flex flex-col">
+                               <h5 class=" text-start text-xs text-gray-900 font-bold">Toumani Diabaté</h5>
+                              <p class="text-xs text-gray-500">Kora</p>
+                        </div>                 
+                    </div>
+                    <div class="w-1/3 flex px-4 items-center justify-end py-4">
+                        <div class="flex max-w-[120px] gap-1 rounded-md bg-blue-800 text-white px-0 py-0 inline-block">
+                            <img src="style/img/location-white.svg" alt="Location" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                            <span class="text-xs text-white mr-1">Cultural Stage</span>
+                        </div>           
+                    </div>
+                </div>
+               <!-- card4 -->
+                <div class="flex justify-between bg-white p-1 rounded-xl gap-4 hover:shadow-md">
+                    <div class="w-2/3  flex items-center gap-4 px-2 py-4">
+                        <div class="flex justify-center items-center gap-1">
+                            <img src="style/img/clock-grey.svg" alt="clock" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                            <span class="text-xs text-gray-500">4:00 PM</span>
+                            
+                        </div>
+                        <div class="flex flex-col">
+                               <h5 class=" text-start text-xs text-gray-900 font-bold">Nitin Sawhney</h5>
+                              <p class="text-xs text-gray-500">Electronic World</p>
+                        </div>                 
+                    </div>
+                    <div class="w-1/3 flex px-4 items-center justify-end py-4">
+                        <div class="flex max-w-[120px] gap-1 rounded-md bg-black text-white px-0 py-0 inline-block">
+                            <img src="style/img/location-white.svg" alt="Location" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                            <span class="text-xs text-white mr-1">Main Stage</span>
+                        </div>           
+                    </div>
+                </div>
+                <!-- card5 -->
+                 <div class="flex justify-between bg-white p-1 rounded-xl gap-4 hover:shadow-md">
+                    <div class="w-2/3  flex items-center gap-4 px-2 py-4">
+                        <div class="flex justify-center items-center gap-1">
+                            <img src="style/img/clock-grey.svg" alt="clock" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                            <span class="text-xs text-gray-500">5:45 PM</span>
+                            
+                        </div>
+                        <div class="flex flex-col">
+                               <h5 class=" text-start text-xs text-gray-900 font-bold">Rodrigo y Gabriela</h5>
+                              <p class="text-xs text-gray-500">Acoustic Rock</p>
+                        </div>                 
+                    </div>
+                    <div class="w-1/3 flex px-4 items-center justify-end py-4">
+                        <div class="flex max-w-[120px] gap-1 rounded-md bg-blue-800 text-white px-0 py-0 inline-block">
+                            <img src="style/img/location-white.svg" alt="Location" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                            <span class="text-xs text-white mr-1">Cultural Stage</span>
+                        </div>           
+                    </div>
+                                   
+                </div>
+                 <!-- card6 -->   
+                 <div class="flex justify-between bg-white p-1 rounded-xl border-black gap-4 hover:shadow-md border">
+                    <div class="w-2/3  flex items-center gap-4 px-2 py-4">
+                        <div class="flex justify-center items-center gap-1">
+                            <img src="style/img/clock-grey.svg" alt="clock" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                            <span class="text-xs text-gray-500">7:30 PM</span>
+                            
+                        </div>
+                        <div class="flex flex-col">
+                               <h5 class=" text-start text-xs text-gray-900 font-bold">Anoushka Shankar</h5>
+                              <p class="text-xs text-gray-500">Indian Classical</p>
+                        </div>                 
+                    </div>
+                    <div class="w-1/3 flex px-4 items-center justify-end py-4 gap-2">
+                        <div class="flex max-w-[140px] gap-1 rounded-md bg-black text-white px-1 py-0 inline-block text-xs text-white mr-1">Headliner</div>
+                        <div class="flex max-w-[120px] gap-1 rounded-md bg-black text-white px-0 py-0 inline-block">
+                            <img src="style/img/location-white.svg" alt="Location" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                            <span class="text-xs text-white mr-1">Main Stage</span>
+                        </div>           
+                    </div>
+                </div>
+            </div>            
+            <!-- Sunday -->
+            <div data-state="inactive" data-day="sunday" class="data-[state=inactive]:hidden data-[state=active]:flex flex-col gap-4">
+                <!-- card1 -->
+                <div class="flex justify-between bg-white p-1 rounded-xl gap-4 hover:shadow-md">
+                    <div class="w-2/3  flex items-center gap-4 px-2 py-4">
+                        <div class="flex justify-center items-center gap-1">
+                            <img src="style/img/clock-grey.svg" alt="clock" class="w-4 h-4 object-coveадr rounded-lg inline-block mr-1">
+                            <span class="text-xs text-gray-500">11:10 AM</span>
+                            
+                        </div>
+                        <div class="flex flex-col">
+                               <h5 class=" text-start text-xs text-gray-900 font-bold">Indian Classical Ensemble</h5>
+                              <p class="text-xs text-gray-500">Classical</p>
+                        </div>
+                    </div>
+                    <div class="w-1/3 flex px-4 items-center justify-end py-4">
+                        <div class="flex max-w-[120px] gap-1 rounded-md bg-blue-800 text-white px-0 py-0 inline-block">
+                            <img src="style/img/location-white.svg" alt="Location" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                            <span class="text-xs text-white mr-1">Cultural Stage</span>
+                        </div>           
+                    </div>
+                </div>
+                <!-- end1 -->
+                <!-- card2  -->
+                <div class="flex justify-between bg-white p-1 rounded-xl gap-4 hover:shadow-md">
+                    <div class="w-2/3  flex items-center gap-4 px-2 py-4">
+                        <div class="flex justify-center items-center gap-1">
+                            <img src="style/img/clock-grey.svg" alt="clock" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                            <span class="text-xs text-gray-500">1:00 PM</span>
+                            
+                        </div>
+                        <div class="flex flex-col">
+                               <h5 class=" text-start text-xs text-gray-900 font-bold">Tash Sultana</h5>
+                              <p class="text-xs text-gray-500">Psychedelic Soul</p>
+                        </div>                 
+                    </div>
+                    <div class="w-1/3 flex px-4 items-center justify-end py-4">
+                        <div class="flex max-w-[120px] gap-1 rounded-md bg-green-600 text-white px-0 py-0 inline-block">
+                            <img src="style/img/location-white.svg" alt="Location" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                            <span class="text-xs text-white mr-1">World Stage</span>
+                        </div>           
+                    </div>
+                </div>
+                <!-- card3  -->
+                <div class="flex justify-between bg-white p-1 rounded-xl gap-4 hover:shadow-md">
+                    <div class="w-2/3  flex items-center gap-4 px-2 py-4">
+                        <div class="flex justify-center items-center gap-1">
+                            <img src="style/img/clock-grey.svg" alt="clock" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                            <span class="text-xs text-gray-500">2:30 PM</span>
+                            
+                        </div>
+                        <div class="flex flex-col">
+                               <h5 class=" text-start text-xs text-gray-900 font-bold">Toumani Diabaté</h5>
+                              <p class="text-xs text-gray-500">Kora</p>
+                        </div>                 
+                    </div>
+                    <div class="w-1/3 flex px-4 items-center justify-end py-4">
+                        <div class="flex max-w-[120px] gap-1 rounded-md bg-blue-800 text-white px-0 py-0 inline-block">
+                            <img src="style/img/location-white.svg" alt="Location" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                            <span class="text-xs text-white mr-1">Cultural Stage</span>
+                        </div>           
+                    </div>
+                </div>
+               <!-- card4 -->
+                <div class="flex justify-between bg-white p-1 rounded-xl gap-4 hover:shadow-md">
+                    <div class="w-2/3  flex items-center gap-4 px-2 py-4">
+                        <div class="flex justify-center items-center gap-1">
+                            <img src="style/img/clock-grey.svg" alt="clock" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                            <span class="text-xs text-gray-500">5:00 PM</span>
+                            
+                        </div>
+                        <div class="flex flex-col">
+                               <h5 class=" text-start text-xs text-gray-900 font-bold">Nitin Sawhney</h5>
+                              <p class="text-xs text-gray-500">Electronic World</p>
+                        </div>                 
+                    </div>
+                    <div class="w-1/3 flex px-4 items-center justify-end py-4">
+                        <div class="flex max-w-[120px] gap-1 rounded-md bg-black text-white px-0 py-0 inline-block">
+                            <img src="style/img/location-white.svg" alt="Location" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                            <span class="text-xs text-white mr-1">Main Stage</span>
+                        </div>           
+                    </div>
+                </div>
+                <!-- card5 -->                  
+                 <div class="flex justify-between bg-white p-1 rounded-xl border-black gap-4 hover:shadow-md border">
+                    <div class="w-2/3  flex items-center gap-4 px-2 py-4">
+                        <div class="flex justify-center items-center gap-1">
+                            <img src="style/img/clock-grey.svg" alt="clock" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                            <span class="text-xs text-gray-500">6:00 PM</span>
+                            
+                        </div>
+                        <div class="flex flex-col">
+                               <h5 class=" text-start text-xs text-gray-900 font-bold">Bomba Estéreo</h5>
+                              <p class="text-xs text-gray-500">Cumbia Electrónica</p>
+                        </div>                 
+                    </div>
+                    <div class="w-1/3 flex px-4 items-center justify-end py-4 gap-2">
+                        <div class="flex max-w-[140px] gap-1 rounded-md bg-black text-white px-1 py-0 inline-block text-xs text-white mr-1">Headliner</div>
+                        <div class="flex max-w-[120px] gap-1 rounded-md bg-black text-white px-0 py-0 inline-block">
+                            <img src="style/img/location-white.svg" alt="Location" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                            <span class="text-xs text-white mr-1">Main Stage</span>
+                        </div>           
+                    </div>
+                    
+                </div>
+                <!-- card6  -->
+                <div class="flex justify-between bg-white p-1 rounded-xl gap-4 hover:shadow-md">
+                    <div class="w-2/3  flex items-center gap-4 px-2 py-4">
+                        <div class="flex justify-center items-center gap-1">
+                            <img src="style/img/clock-grey.svg" alt="clock" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                            <span class="text-xs text-gray-500">7:30 PM</span>
+                            
+                        </div>
+                        <div class="flex flex-col">
+                               <h5 class=" text-start text-xs text-gray-900 font-bold">Toumani Diabaté</h5>
+                              <p class="text-xs text-gray-500">Kora</p>
+                        </div>                 
+                    </div>
+                    <div class="w-1/3 flex px-4 items-center justify-end py-4">
+                        <div class="flex max-w-[120px] gap-1 rounded-md bg-blue-800 text-white px-0 py-0 inline-block">
+                            <img src="style/img/location-white.svg" alt="Location" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                            <span class="text-xs text-white mr-1">Cultural Stage</span>
+                        </div>           
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!--  -->
+        </div>
+        <!-- обозначчения -->
+    <div class="flex justify-center items-center gap-4">
+                <!-- 1 карточка -->
+        <div>
+            <div class="flex justify-center items-center max-w-[140px] gap-1">
+                <span class="bg-black w-4 h-4 rounded"></span>
+                <span class="text-xs text-gray-900 mr-1">Main Stage</span>
+            </div>
+        </div>
+        <!-- 1 end -->
+        <!-- 2 карточка -->
+        <div>
+            <div class="flex justify-center items-center max-w-[140px] gap-1">
+                <span class="bg-green-500 w-4 h-4 rounded"></span>
+                <span class="text-xs text-gray-900 mr-1">World Stage</span>
+            </div>
+        </div>
+                <!-- 2 end -->
+                <!-- 3 карточка -->
+        <div>
+            <div class="flex justify-center items-center max-w-[140px] gap-1">
+                <span class="bg-blue-800 w-4 h-4 rounded"></span>
+                <span class="text-xs text-gray-900 mr-1">Cultural Stage</span>
+            </div>
+        </div>
+    <!-- 3 end -->
+    </div>
+</section>
+<!-- Tickets -->
+<section id="tickets" class="bg-white min-h-screen py-20 px-4">   
+<div class="flex flex-col max-w-[900px] mx-auto mb-8">
+    <!-- headers of tickets -->
+    <div class="flex flex-col max-w-[600px] mx-auto mb-12">
+        <h2 class="text-4xl text-center font-bold mb-8">Festival Tickets</h2>
+        <p class="text-center text-gray-500 mb-12">Choose your perfect festival experience. All tickets include access to cultural workshops, food vendors, and merchandise areas.</p>
+    </div>
+    <!-- Prices for 3 days -->
+     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-[900px] mx-auto gap-4 mb-8">
+        <!-- 1 Ticket -->
+         <div data-slot= "card" class="bg-card text-card-foreground flex flex-col justify-center  items-center gap-6 rounded-xl border relative overflow-hidden transition-all hover:shadow-lg p-2">
+            <div data-slot="card-header" class="flex flex-col justify-center  items-center mb-4">
+                <div  class="flex justify-center  items-center mb-4">
+                    <div class="p-3 bg-gray-300 rounded-full">
+                        <img src="style/img/check-mark-ticket.svg" alt="calendar" class="w-12 h-12 object-cover rounded-lg inline-block mr-1">
+                    </div>
+                </div>
+                <h5 class="text-sm font-bold text-gray-900">General Admission</h5>
+                <div>
+                    <div class="text-3xl font-bold">$99</div>
+                    <div class="text-muted-foreground">3-Day Pass</div>
+                </div>
+            </div>
+            <div data-slot="card-content" class="flex flex-col gap-4">
+                <ul class="list-disc list-inside text-sm text-gray-500">
+                    <li>Access to all three stages</li>
+                    <li>Food vendor access</li>
+                    <li>Merchandise discounts</li>
+                    <li>Festival map & program</li>
+                </ul>
+                <button class="hover:bg-gray-200 text-gray-900 text-xs py-2 px-1 rounded-md border mb-8">Select General Admission</button>
+            </div>
+                
+         </div>
+         <!-- end 1 ticket -->
+          <!-- 2 ticket -->
+           <div data-slot= "card" class="bg-card text-card-foreground flex flex-col justify-center  items-center gap-6 rounded-xl border border-black relative overflow-hidden transition-all hover:shadow-lg p-2 scale-105">
+            <div class="absolute top-0 right-0 bg-yellow-400 text-black text-xs font-bold px-2 py-1 rounded-bl-lg">
+                Most Popular
+            </div>
+            <div data-slot="card-header" class="flex flex-col justify-center  items-center mb-4" >
+                <div  class="flex justify-center  items-center mb-4">
+                    <div class="p-3 bg-gray-300 rounded-full">
+                        <img src="style/img/star.svg" alt="calendar" class="w-12 h-12 object-cover rounded-lg inline-block mr-1">
+                    </div>
+                </div>
+                <h5 class="text-sm font-bold text-gray-900">Premium Experience</h5>
+                <div>
+                    <div class="text-3xl font-bold">$199</div>
+                    <div class="text-muted-foreground">3-Day Pass</div>
+                </div>
+            </div>
+            <div data-slot="card-content" class="flex flex-col gap-4">
+                <ul class="list-disc list-inside text-sm text-gray-500">
+                    <li>Everything in General Admission</li>
+                    <li>Priority stage viewing areas</li>
+                    <li>Express entry lanes</li>
+                    <li>Complimentary festival t-shirt</li>
+                    <li>Access to Premium Rest Areas</li>
+                </ul>
+                <button class=" bg-gray-900 hover:bg-gray-200 hover:text-gray-900 text-white text-xs py-2 px-1 rounded-md border mb-8">Select Premium Experience</button>
+            </div>
+                
+         </div>
+         <!-- end 2 ticket -->
+          <!-- 3 ticket -->
+
+          <div data-slot= "card" class="bg-card text-card-foreground flex flex-col justify-center  items-center gap-6 rounded-xl border relative overflow-hidden transition-all hover:shadow-lg p-2">
+            <div data-slot="card-header" class="flex flex-col justify-center  items-center mb-4" >
+                <div  class="flex justify-center  items-center mb-4">
+                    <div class="p-3 bg-gray-300 rounded-full">
+                        <img src="style/img/crown.svg" alt="calendar" class="w-12 h-12 object-cover rounded-lg inline-block mr-1">
+                    </div>
+                </div>
+                <h5 class="text-sm font-bold text-gray-900">VIP Cultural Circle</h5>
+                <div>
+                    <div class="text-3xl font-bold">$399</div>
+                    <div class="text-muted-foreground">3-Day Pass</div>
+                </div>
+            </div>
+            <div data-slot="card-content" class="flex flex-col gap-4">
+                <ul class="list-disc list-inside text-sm text-gray-500">
+                    <li>Everything in Premium Experience</li>
+                    <li>Meet & greet with select artists</li>
+                    <li>Backstage tours</li>
+                    <li>VIP lounge with complimentary drinks</li>
+                    <li>Reserved seating at Main Stage</li>
+                    <li>Exclusive cultural workshops</li>
+                </ul>
+                <button class="hover:bg-gray-200 text-gray-900 text-xs py-2 px-1 rounded-md border mb-2">Select VIP Cultural Circle</button>
+            </div>
+                
+         </div>
+         <!-- end 3 ticket -->
+
+     </div>
+    <!-- Prices for 1 day -->
+     <div class="flex flex-col justify-center items-center max-w-[800px] mx-auto gap-4 mb-8">
+        <h3 class=" text-center text-lg text-gray-900 font-bold">Single Day Passes</h3>
+         <div class="grid grid-cols-3 gap-3">
+       <!-- Prices for friday -->
+            <div class="flex flex-col justify-center items-center border rounded-xl gap-2 px-6 py-4 hover:shadow-md">
+                <h6 class=" text-center text-sm text-gray-900 font-bold">Friday</h6>
+                <h5 class=" text-center text-lg text-gray-900 font-bold">$45</h5>
+                <button class="hover:bg-gray-200 text-gray-900 text-xs py-2 px-1 rounded-md border">Buy Friday Pass</button>
+            </div> 
+        <!-- Price for saturday -->
+             <div class="flex flex-col justify-center items-center border rounded-xl gap-2 px-6 py-4 hover:shadow-md">
+                 <h6 class=" text-center text-sm text-gray-900 font-bold">Saturday</h6>
+                <h5 class=" text-center text-lg text-gray-900 font-bold">$49</h5>
+                <button class="hover:bg-gray-200 text-gray-900 text-xs py-2 px-1 rounded-md border">Buy Saturday Pass</button>
+             </div> 
+             <!-- Price for sunday --> 
+              <div class="flex flex-col justify-center items-center border rounded-xl gap-2 px-6 py-4 hover:shadow-md">
+                <h6 class=" text-center text-sm text-gray-900 font-bold">Sunday</h6>
+                <h5 class=" text-center text-lg text-gray-900 font-bold">$45</h5>
+                <button class="hover:bg-gray-200 text-gray-900 text-xs py-2 px-1 rounded-md border">Buy Sunday Pass</button>
+             </div>
+         </div>
+
+     </div>
+     <!-- Information -->
+      <div class="flex flex-col max-w-[600px] mx-auto">
+        <p class="text-center  text-xs text-gray-500 mb-4">Children under 12 get free admission with paying adult. Student discounts available with valid ID.</p>
+        <div class="flex gap-4 justify-center items-center">
+            <!-- first point -->
+            <div class="flex justify-center items-center">
+                <img src="style/img/check-mark.svg " alt="info" class="w-2 h-2 object-cover rounded-lg inline-block mr-1">
+                <span class="text-[10px] text-gray-500">Mobile tickets</span>
+            </div>
+            
+            <!-- second point -->
+             <div class="flex justify-center items-center">
+                <img src="style/img/check-mark.svg" alt="info" class="w-2 h-2 object-cover rounded-lg inline-block mr-1">
+                <span class="text-[10px] text-gray-500"> Instant delivery</span>
+            </div>
+             <!-- third point -->
+                <div class="flex justify-center items-center">
+                    <img src="style/img/check-mark.svg" alt="info" class="w-2 h-2 object-cover rounded-lg inline-block mr-1">
+                    <span class="text-[10px] text-gray-500">Secure checkout</span>
+                </div>
+            </div>
+
+        </div>
+      </div>
+</div>
+</section>
+<!-- Vue -->
+ <section id="vue" class="bg-gray-100 min-h-screen py-20 px-4">
+    <div class="mx-auto max-w-[900px]">
+        <div class="flex flex-col max-w-[600px] mx-auto">
+            <h2 class="text-4xl text-center font-bold mb-8">Venue Information</h2>
+            <p class="text-center text-gray-500 mb-8">CultureFest takes place in the heart of Manhattan at Central Park's Great Lawn, providing a beautiful natural setting for our global celebration.</p>
+        </div>
+            <!-- Vue components -->
+        <div class="grid grid-cols-2 mx-auto mb-8">
+            <!-- 1 vue component -->
+            <div data-slot="left-card" class="flex flex-col p-6 gap-4">
+                <!-- 1 card component -->
+             <div data-slot="left-card-component" class="flex flex-col p-6 gap-4 bg-white rounded-xl border hover:shadow-md">
+                <div class="flex items-start space-x-4 mb-4">
+                    <img src="style/img/location-check.svg" alt="location" class="w-6 h-6 object-cover rounded-lg inline-block mr-1">
+                    <div>
+                        <h5 class="text-sm font-bold text-gray-900">Central Park - Great Lawn</h5>
+                        <p class="text-xs text-gray-500">Central Park West & 85th Street<br> New York, NY 10024</p>
+                    </div>
+                </div>
+             <div data-slot="card-2-component" class="flex flex-col p-6 gap-4">
+                <div>
+                    <h5 class="text-sm font-bold text-gray-900">Festival Hours</h5>
+                    <p class="text-xs text-gray-500">Friday - Sunday: 11:00 AM - 10:00 PM<br>Gates open at 10:30 AM daily</p>
+                </div>
+                <div>
+                    <h5 class="text-sm font-bold text-gray-900">Venue Capacity</h5>
+                    <p class="text-xs text-gray-500">15,000 daily capacity across multiple stage areas</p>
+                </div>
+             </div>
+            <a data-slot="button" class="bg-gray-900 text-white text-center py-2 px-4 rounded-md hover:bg-gray-800 transition-colors duration-300 w-full mt-6" href="https://maps.app.goo.gl/suG7zgUpfN9rdoRU6" target="_blank">Get Directions</a>    
+             </div>
+             <!-- end 1 card component -->
+              <!-- 2 card component -->
+             <div data-slot="card-component" class="flex flex-col p-1 gap-4">
+               
+                 <h4 class="text-lg font-bold text-gray-900">Getting There</h4>
+                
+             <div data-slot="card-2-component" class="flex flex-col p-1 gap-4"> 
+                <div class="flex items-start mb-4 gap-2">
+                    <div class="p-1 bg-gray-300 rounded-md">
+                        <img src="style/img/subway.svg" alt="subway" class="w-6 h-6 object-cover rounded-lg inline-block mr-2">
+                    </div>
+                    <div> 
+                        <h5 class="text-sm font-bold text-gray-900">Subway</h5>
+                        <p class="text-xs text-gray-500">Take the 6 train to 68th St-Hunter College or 77th St stations</p>
+                    </div>
+                </div> 
+                <div class="flex items-start mb-4 gap-2">
+                    <div class="p-1 bg-gray-300 rounded-md">
+                        <img src="style/img/bus.svg" alt="bus" class="w-6 h-6 object-cover rounded-lg inline-block mr-1">
+                    </div>
+                    <div>
+                        <h5 class="text-sm font-bold text-gray-900">Bus</h5>
+                        <p class="text-xs text-gray-500">Multiple bus lines serve the area including M1, M2, M3, and M4</p>
+                    </div>
+                </div>
+                <div class="flex items-start mb-4 gap-2">
+                    <div class="p-1 bg-gray-300 rounded-md">
+                        <img src="style/img/car.svg" alt="car" class="w-6 h-6 object-cover rounded-lg inline-block mr-1">
+                    </div>
+                    <div>
+                        <h5 class="text-sm font-bold text-gray-900">Car</h5>
+                        <p class="text-xs text-gray-500">Parking available at nearby garages. Festival shuttles provided.</p>
+                    </div>
+                </div>
+             </div>
+            </div> 
+        </div>
+             <!-- end of 1 vue component -->
+            <!-- start 2 vue component -->
+             
+
+
+            
+    
+               <!-- end 2 vue component -->
+           <div data-slot="right-card" class="flex flex-col p-6 gap-4">
+                <div data-slot="img" class="full mb-8">
+                    <img src="style/img/photo-vue-section.jpeg" alt="venue" class="w-full h-[300px] object-cover rounded-lg">
+                </div>
+                <div data-slot="content" class="flex flex-col gap-8 mb-8">
+                    <h4 class="text-lg font-bold text-gray-900">Venue Amenities</h4>
+                    <div class="grid grid-cols-2 gap-4">
+                        <!-- 1card -->
+                        <div class="flex items-start mb-4 gap-2">
+                        <div class="p-1 bg-gray-300 rounded-md">
+                         <img src="style/img/spoon-fork.svg" alt="food" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                    </div>
+                    <div>
+                        <h5 class="text-xs font-bold text-gray-900">Food & Drinks</h5>
+                        <p class="text-[10px] text-gray-500">International food vendors and cultural cuisine</p>
+                    </div>
+                </div>
+                 <!-- 2card -->
+                  <div class="flex items-start mb-4 gap-2">
+                        <div class="p-1 bg-gray-300 rounded-md">
+                         <img src="style/img/full-shoping-cart.svg" alt="shoping" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                    </div>
+                    <div>
+                        <h5 class="text-xs font-bold text-gray-900">Merchandise</h5>
+                        <p class="text-[10px] text-gray-500">Official festival gear and artist merchandise</p>
+                    </div>
+                </div>
+<!-- 3card -->
+                  <div class="flex items-start mb-4 gap-2">
+                        <div class="p-1 bg-gray-300 rounded-md">
+                         <img src="style/img/photo.svg" alt="camera" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                    </div>
+                    <div>
+                        <h5 class="text-xs font-bold text-gray-900">Photo Ops</h5>
+                        <p class="text-[10px] text-gray-500">Designated photo areas with cultural backdrops</p>
+                    </div>
+                </div>
+                <!-- 4card -->
+                  <div class="flex items-start mb-4 gap-2">
+                        <div class="p-1 bg-gray-300 rounded-md">
+                         <img src="style/img/car.svg" alt="parking" class="w-4 h-4 object-cover rounded-lg inline-block mr-1">
+                    </div>
+                    <div>
+                        <h5 class="text-xs font-bold text-gray-900">Parking</h5>
+                        <p class="text-[10px] text-gray-500">Multiple parking areas with shuttle service</p>
+                    </div>
+                </div>
+                <!-- end of 4card -->
+                    </div>
+                    <div class="flex flex-col gap-6 bg-gray-200 rounded-xl border mt-8">
+                        <div data-slot="card-content" class=" p-6">
+                            <h4 class="font-semibold mb-2">Important Venue Notes</h4>
+                            <ul class="text-xs text-muted-foreground space-y-1">
+                                <li>• Blankets and low-back chairs welcome</li>
+                                <li>• No outside food or beverages</li>
+                                <li>• Bag checks at all entrances</li>
+                                <li>• Weather contingency plans in place</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div> 
+        </div>
+    </div>
+ </section> 
+ <!-- footer -->
+<footer class="bg-black text-primary-foreground">
+    <div class=" mx-auto px-4 py-2">
+        <!-- footer tab-content-->
+        <div class="grid lg:grid-cols-4 gap-8 mb-8">
+<!-- right column -->
+        <div>
+            <div class="flex items-center mb-4 gap-2">
+                <img src="style/img/music-notes-white.svg" alt="logo" class="w-6 h-6 object-cover rounded-lg inline-block mr-1">
+                <h2 class="text-lg font-bold text-white">CultureFest</h2>
+            </div>
+            <p class="text-gray-200 text-sm">Celebrating the world's musical heritage through three days of unforgettable performances and cultural exchange.</p>
+            <div class="flex mt-4 gap-4">
+                <a href="#" class="text-gray-200 hover:text-white transition-colors">
+                    <img src="style/img/facebook-white.svg" alt="Facebook" class="w-4 h-4 object-cover rounded-lg inline-block">
+                </a>
+                <a href="#" class="text-gray-200 hover:text-white transition-colors">
+                    <img src="style/img/twitter-white.svg" alt="Twitter" class="w-4 h-4 object-cover rounded-lg inline-block">
+                </a>
+                <a href="#" class="text-gray-200 hover:text-white transition-colors">
+                    <img src="style/img/instagram-white.svg" alt="Instagram" class="w-4 h-4 object-cover rounded-lg inline-block">
+                </a></div>
+
+        </div> 
+ <!-- 2 right column -->
+  <div>
+    <h3 class=" text-white font-semibold mb-4">Quick Links</h3>
+    <ul class="space-y-2">
+        <li><a href="#about" class="text-white  hover:text-primary-foreground transition-colors">About</a></li>
+        <li><a href="#lineup" class="text-white  hover:text-primary-foreground transition-colors">Lineup</a></li>
+        <li><a href="#schedule" class="text-white  hover:text-primary-foreground transition-colors">Schedule</a></li>
+        <li><a href="#tickets" class="text-white  hover:text-primary-foreground transition-colors">Tickets</a></li>
+        <li><a href="#venue" class="text-white  hover:text-primary-foreground transition-colors">Venue</a></li>
+    </ul>
+    </div>
+    <!-- 3 column    -->
+     <div>
+        <h3 class="text-white font-semibold mb-4">Support</h3>
+        <ul class="space-y-2">
+            <li><a href="#" class="text-white  hover:text-primary-foreground transition-colors">FAQ</a></li>
+            <li><a href="#" class="text-white  hover:text-primary-foreground transition-colors">Contact Us</a></li>
+            <li><a href="#" class="text-white  hover:text-primary-foreground transition-colors">Accessibility</a></li>
+            <li><a href="#" class="text-white  hover:text-primary-foreground transition-colors">Safety</a></li>
+            <li><a href="#" class="text-white  hover:text-primary-foreground transition-colors">Volunteers</a></li>
+        </ul>
+    </div>
+    <!-- left column -->
+     <div>
+        <h3 class="text-white font-semibold mb-4">Stay Connected</h3>
+        <p class="text-primary-foreground/80 mb-4">Get the latest updates on artists, tickets, and festival news.</p>
+        <div class="space-y-3">
+            <input type="email" data-slot="input" class="file:text-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 flex h-9 w-full min-w-0 rounded-md border px-3 py-1 text-base transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-gray-900 border-gray-600 placeholder:text-gray-500" placeholder="Enter your email">
+            <button data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive h-9 px-4 py-2 has-[&gt;svg]:px-3 w-full bg-white text-gray-900 hover:bg-gray-200">Subscribe</button>
+        </div>
+    </div>
+</div>
+<!-- footer contact -->
+<div class="flex justify-between items-center p-2 mb-8">
+    <a class="flex justify-center items-center" href="mailto:info@culturefest.com" target="_blank">
+        <span class="w-4 h-4 object-cover rounded-lg inline-block mr-1"><img src="style/img/email-white.svg" alt="Email"></span>
+                    <span class="text-xs text-white hover:text-gray-400  transition-colors">info@culturefest.com</span>
+                </a>
+            <a class="flex justify-center items-center" href="tel:+351912345678" target="_blank">
+                    <span class="w-4 h-4 object-cover rounded-lg inline-block mr-1"><img src="style/img/phone-white.svg" alt="Telefone"></span>
+                    <span class="text-xs text-white hover:text-gray-400  transition-colors">+351 912 345 678</span>
+                </a>
+            <a class="flex justify-center items-center" href="https://maps.app.goo.gl/SThg8tobiVZrQzme6" target="_blank">
+                    <span class="w-4 h-4 object-cover rounded-lg inline-block mr-1"><img src="style/img/location-white.svg" alt="location"></span>
+                    <span class="text-xs text-white hover:text-gray-400  transition-colors">Central Park, New York</span>
+                </a>
+            </div>
+        <!-- footer privacy   -->
+        <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div class="text-xs text-white">© 2025 CultureFest. All rights reserved.</div>
+            <div class="flex space-x-6 text-sm"><a href="#" class="text-xs text-white hover:text-gray-400 transition-colors">Privacy Policy</a><a href="#" class="text-xs text-white hover:text-gray-400 transition-colors">Terms of Service</a><a href="#" class="text-xs text-white hover:text-gray-400 transition-colors">Cookie Policy</a>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
