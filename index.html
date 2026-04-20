@@ -43,7 +43,7 @@
 <div class="fixed inset-0 bg-black/50 hidden"></div>
 
 <!--Home  -->
-<section id="home"class="pt-20 min-h-screen bg-[url('style/img/festival-background.jpeg')] bg-cover bg-center bg-no-repeat">
+<section id="home" class="pt-20 min-h-screen bg-[url('style/img/festival-background.jpeg')] bg-cover bg-center bg-no-repeat">
   <div class="max-w-6xl mx-auto px-4">
     <h1 class="text-6xl text-center text-white font-bold mb-4">CultureFest</h1>
     <h2 class="text-4xl text-center text-white font-semibold mb-4">World Music Festival 2025</h2>
@@ -137,7 +137,7 @@
 </section>
 <!--Lineup -->
 <section id="lineup" class="py-20 bg-white min-h-screen">
-    <div class=" flex flex-col gap-12 max-w-[1000px] px-4 mx-auto">
+    <div class=" flex flex-col gap-12 max-w-[1200px] px-4 mx-auto">
         <div class="flex flex-col items-center p-4 mx-auto max-w-[700px]">
               <h2 class="text-4xl text-center font-bold mb-8">World-Class Lineup</h2>
               <p class="text-center text-gray-500 mb-12">Experience performances from Grammy winners, cultural ambassadors, and rising stars from around the globe.</p>
@@ -270,7 +270,7 @@
             <p class="text-center text-gray-500 mb-12">Three days of non-stop cultural performances across multiple stages.</p>
         </div>
         <!-- table schedule -->
-        <div class="flex flex-col max-w-[900px] mx-auto mb-8">
+        <div class="flex flex-col max-w-[1200px] mx-auto mb-8">
             <!-- Табы -->
             <div class="grid grid-cols-3 gap-4 mb-8 bg-gray-200 px-2 py-1 rounded-xl">
                 <button data-state="inactive" data-day="friday" class="bg-transparent data-[state=active]:bg-white p-1 rounded-2xl text-center text-xs text-black ">Friday, July 15</button>
@@ -692,14 +692,14 @@
 </section>
 <!-- Tickets -->
 <section id="tickets" class="bg-white min-h-screen py-20 px-4">   
-<div class="flex flex-col max-w-[900px] mx-auto mb-8">
+<div class="flex flex-col max-w-[1200px] mx-auto mb-8">
     <!-- headers of tickets -->
     <div class="flex flex-col max-w-[600px] mx-auto mb-12">
         <h2 class="text-4xl text-center font-bold mb-8">Festival Tickets</h2>
         <p class="text-center text-gray-500 mb-12">Choose your perfect festival experience. All tickets include access to cultural workshops, food vendors, and merchandise areas.</p>
     </div>
     <!-- Prices for 3 days -->
-     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-[900px] mx-auto gap-4 mb-8">
+     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-[1200px] mx-auto gap-4 mb-8">
         <!-- 1 Ticket -->
          <div data-slot= "card" class="bg-card text-card-foreground flex flex-col justify-center  items-center gap-6 rounded-xl border relative overflow-hidden transition-all hover:shadow-lg p-2">
             <div data-slot="card-header" class="flex flex-col justify-center  items-center mb-4">
@@ -788,7 +788,7 @@
 
      </div>
     <!-- Prices for 1 day -->
-     <div class="flex flex-col justify-center items-center max-w-[800px] mx-auto gap-4 mb-8">
+     <div class="flex flex-col justify-center items-center max-w-[1200px] mx-auto gap-4 mb-8">
         <h3 class=" text-center text-lg text-gray-900 font-bold">Single Day Passes</h3>
          <div class="grid grid-cols-3 gap-3">
        <!-- Prices for friday -->
@@ -836,11 +836,11 @@
 
         </div>
       </div>
-</div>
+
 </section>
 <!-- Vue -->
  <section id="vue" class="bg-gray-100 min-h-screen py-20 px-4">
-    <div class="mx-auto max-w-[900px]">
+    <div class="mx-auto max-w-[1200px]">
         <div class="flex flex-col max-w-[600px] mx-auto">
             <h2 class="text-4xl text-center font-bold mb-8">Venue Information</h2>
             <p class="text-center text-gray-500 mb-8">CultureFest takes place in the heart of Manhattan at Central Park's Great Lawn, providing a beautiful natural setting for our global celebration.</p>
@@ -984,24 +984,28 @@
 <footer class="bg-black text-primary-foreground">
     <div class=" mx-auto px-4 py-2">
         <!-- footer tab-content-->
-        <div class="grid lg:grid-cols-4 gap-8 mb-8">
+        <div class="grid lg:grid-cols-4 gap-8 mb-8 border-b border-gray-700 pb-4">
 <!-- right column -->
         <div>
-            <div class="flex items-center mb-4 gap-2">
+            <div class="flex items-center mb-8 gap-2">
                 <img src="style/img/music-notes-white.svg" alt="logo" class="w-6 h-6 object-cover rounded-lg inline-block mr-1">
-                <h2 class="text-lg font-bold text-white">CultureFest</h2>
+                <h2 class="text-lg font-bold text-white mb-4">CultureFest</h2>
             </div>
-            <p class="text-gray-200 text-sm">Celebrating the world's musical heritage through three days of unforgettable performances and cultural exchange.</p>
+            <p class="text-gray-200 text-sm mb-8">Celebrating the world's musical heritage through three days of unforgettable performances and cultural exchange.</p>
             <div class="flex mt-4 gap-4">
-                <a href="#" class="text-gray-200 hover:text-white transition-colors">
-                    <img src="style/img/facebook-white.svg" alt="Facebook" class="w-4 h-4 object-cover rounded-lg inline-block">
+                <a href="#" class="text-gray-200 hover:text-white transition-colors" target="_blank">
+                    <img src="style/img/facebook.svg" alt="Facebook" class="w-6 h-6 object-cover rounded-lg inline-block">
                 </a>
-                <a href="#" class="text-gray-200 hover:text-white transition-colors">
-                    <img src="style/img/twitter-white.svg" alt="Twitter" class="w-4 h-4 object-cover rounded-lg inline-block">
+                <a href="#" class="text-gray-200 hover:text-white transition-colors" target="_blank">
+                    <img src="style/img/twitter.svg" alt="Twitter" class="w-6 h-6 object-cover rounded-lg inline-block">
                 </a>
-                <a href="#" class="text-gray-200 hover:text-white transition-colors">
-                    <img src="style/img/instagram-white.svg" alt="Instagram" class="w-4 h-4 object-cover rounded-lg inline-block">
-                </a></div>
+                <a href="#" class="text-gray-200 hover:text-white transition-colors" target="_blank">
+                    <img src="style/img/instagram.svg" alt="Instagram" class="w-6 h-6 object-cover rounded-lg inline-block">
+                </a>
+                <a href="#" class="text-gray-200 hover:text-white transition-colors" target="_blank">
+                    <img src="style/img/youtube.svg" alt="Youtube" class="w-6 h-6 object-cover rounded-lg inline-block">
+                </a>
+            </div>
 
         </div> 
  <!-- 2 right column -->
@@ -1029,7 +1033,7 @@
     <!-- left column -->
      <div>
         <h3 class="text-white font-semibold mb-4">Stay Connected</h3>
-        <p class="text-primary-foreground/80 mb-4">Get the latest updates on artists, tickets, and festival news.</p>
+        <p class="text-gray-200 mb-4">Get the latest updates on artists, tickets, and festival news.</p>
         <div class="space-y-3">
             <input type="email" data-slot="input" class="file:text-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 flex h-9 w-full min-w-0 rounded-md border px-3 py-1 text-base transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-gray-900 border-gray-600 placeholder:text-gray-500" placeholder="Enter your email">
             <button data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive h-9 px-4 py-2 has-[&gt;svg]:px-3 w-full bg-white text-gray-900 hover:bg-gray-200">Subscribe</button>
@@ -1037,7 +1041,7 @@
     </div>
 </div>
 <!-- footer contact -->
-<div class="flex justify-between items-center p-2 mb-8">
+<div class="flex justify-between items-center p-2 mb-8  border-b border-gray-700 pb-4">
     <a class="flex justify-center items-center" href="mailto:info@culturefest.com" target="_blank">
         <span class="w-4 h-4 object-cover rounded-lg inline-block mr-1"><img src="style/img/email-white.svg" alt="Email"></span>
                     <span class="text-xs text-white hover:text-gray-400  transition-colors">info@culturefest.com</span>
