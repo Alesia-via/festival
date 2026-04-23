@@ -48,7 +48,7 @@
     <h1 class="text-6xl text-center text-white font-bold mb-4">CultureFest</h1>
     <h2 class="text-4xl text-center text-white font-semibold mb-4">World Music Festival 2025</h2>
     <p class="text-lg text-center text-white  mb-8">Experience the world's most vibrant cultures through music, dance, and art.<br> Join us for three unforgettable days celebrating global diversity.</p> 
-    <div class="flex justify-center gap-4">
+    <div class="flex flex-col items-center md:flex-row md:items-center justify-center gap-4">
         <div>
             <img src="style/img/calendar.svg" alt="Calendar icon" class="w-6 h-6 inline-block mr-2">
             <span class="text-white">July 15-17, 2025</span>
@@ -71,11 +71,11 @@
 </section>
 <!--About  -->
 <section id="about" class="bg-gray-100 min-h-screen py-20 px-4">
-    <div class="flex mx-auto px-4 gap-8">
-        <div class="w-1/2 relative">
+    <div class="flex flex-col md:flex-row items-center md:items-start justify-center mx-auto px-4 gap-8">
+        <div class="md:w-1/2 relative">
             <h2 class=" text-3xl md:text-4xl font-bold mb-6">Celebrating Musical<br>Heritage</h2>
             <p class="text-lg text-muted-foreground text-gray-500 mb-8">CultureFest brings together the world's most talented musicians, dancers, and artists to celebrate the rich tapestry of global culture. For three days, Central Park transforms into a vibrant showcase of humanity's musical heritage.</p>
-            <div class="grid grid-cols-2 gap-6">
+            <div class="grid md:grid-cols-2 gap-6">
                 <!-- card  -->
                 <div class="flex items-start space-x-3">
                     <div class="px-2 bg-gray-200 rounded-lg">
@@ -115,7 +115,7 @@
                 </div>
             </div>
         </div>
-        <div class="w-1/2 relative">
+        <div class="md:w-1/2 relative">
             <div class="relative rounded-2xl overflow-hidden">
                 <img src="style/img/photo-section-about.jpeg" alt="Music instruments" class="w-full h-[500px] object-cover">
             </div>
@@ -144,7 +144,7 @@
         </div>
         <div class="flex flex-col gap-8 mb-10">
             <h3 class="text-3xl text-center font-bold mb-8">Headliners</h3>
-            <div class="grid grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-3 gap-8">
                 <!-- card-1 -->
                 <div class="flex flex-col gap-2 rounded-xl p-6 border shadow-lg hover:shadow-md">
                     <div class="flex justify-between items-start">
@@ -198,7 +198,7 @@
         </div>
         <div>
                 <h3 class="text-3xl text-center font-bold mb-8">Featured Artists</h3>
-                <div class="grid grid-cols-4 gap-4 mx-auto">
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mx-auto ">
                     <!-- Featured Artist Card -->
                      <div class="flex flex-col gap-2 rounded-xl p-4 border shadow-lg hover:shadow-md">
                          <div class="flex justify-between gap -3 items-start">
@@ -699,7 +699,7 @@
         <p class="text-center text-gray-500 mb-12">Choose your perfect festival experience. All tickets include access to cultural workshops, food vendors, and merchandise areas.</p>
     </div>
     <!-- Prices for 3 days -->
-     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-[1200px] mx-auto gap-4 mb-8">
+     <div class="grid grid-cols-1 md:grid-cols-3 max-w-[1200px] mx-auto gap-4 mb-8">
         <!-- 1 Ticket -->
          <div data-slot= "card" class="bg-card text-card-foreground flex flex-col justify-center  items-center gap-6 rounded-xl border relative overflow-hidden transition-all hover:shadow-lg p-2">
             <div data-slot="card-header" class="flex flex-col justify-center  items-center mb-4">
@@ -790,7 +790,7 @@
     <!-- Prices for 1 day -->
      <div class="flex flex-col justify-center items-center max-w-[1200px] mx-auto gap-4 mb-8">
         <h3 class=" text-center text-lg text-gray-900 font-bold">Single Day Passes</h3>
-         <div class="grid grid-cols-3 gap-3">
+         <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
        <!-- Prices for friday -->
             <div class="flex flex-col justify-center items-center border rounded-xl gap-2 px-6 py-4 hover:shadow-md">
                 <h6 class=" text-center text-sm text-gray-900 font-bold">Friday</h6>
@@ -846,7 +846,7 @@
             <p class="text-center text-gray-500 mb-8">CultureFest takes place in the heart of Manhattan at Central Park's Great Lawn, providing a beautiful natural setting for our global celebration.</p>
         </div>
             <!-- Vue components -->
-        <div class="grid grid-cols-2 mx-auto mb-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto mb-8">
             <!-- 1 vue component -->
             <div data-slot="left-card" class="flex flex-col p-6 gap-4">
                 <!-- 1 card component -->
